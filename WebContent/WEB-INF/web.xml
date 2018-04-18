@@ -31,6 +31,16 @@
         <servlet-name>ListarLibros</servlet-name>
         <url-pattern>/ListarLibros</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Etiquetas</servlet-name>
+        <servlet-class>controlador.Etiquetas</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Etiquetas</servlet-name>
+        <url-pattern>/Etiquetas</url-pattern>
+    </servlet-mapping>
 
 <!-- Fin de la publicacion de servlets -->
 
