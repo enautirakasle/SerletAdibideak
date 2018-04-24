@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <jsp:useBean id="liburua" scope="request" class="modelo.Libro"></jsp:useBean>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+	pageEncoding="ISO-8859-1"%>
+<jsp:useBean id="liburua" scope="request" class="modelo.Libro"></jsp:useBean>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,12 +16,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<jsp:getProperty name="liburua" property="titulo"/>
+				<jsp:getProperty name="liburua" property="titulo" />
+				<br>
+				<br>
 				<c:forEach items="${libros}" var="item">
 
-   ${item.titulo} <br/>
+   				${item.titulo} <br/>
 
-</c:forEach> 
+				</c:forEach>
 			</div>
 		</div>
 	</div>

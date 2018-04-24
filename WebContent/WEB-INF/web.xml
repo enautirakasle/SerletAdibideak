@@ -22,6 +22,16 @@
         <url-pattern>/HolaMundo</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>HolaPhonegap</servlet-name>
+        <servlet-class>controlador.HolaPhonegap</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HolaPhonegap</servlet-name>
+        <url-pattern>/HolaPhonegap</url-pattern>
+    </servlet-mapping>
+    
       <servlet>
         <servlet-name>ListarLibros</servlet-name>
         <servlet-class>controlador.ListarLibros</servlet-class>
