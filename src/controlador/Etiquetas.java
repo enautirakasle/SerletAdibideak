@@ -23,7 +23,7 @@ public class Etiquetas extends HttpServlet {
 		LibroModelo libroModelo = new LibroModelo();
 		ArrayList<Libro> libros = libroModelo.selectAll();
 		
-		request.setAttribute("libros", libros);
+		request.setAttribute("books", libros);
 
 		RequestDispatcher rd = request.getRequestDispatcher("etiqueta.jsp");
 		rd.forward(request, response);

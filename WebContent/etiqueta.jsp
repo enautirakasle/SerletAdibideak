@@ -19,11 +19,14 @@
 				<jsp:getProperty name="liburua" property="titulo" />
 				<br>
 				<br>
-				<c:forEach items="${libros}" var="item">
-
-   				${item.titulo} <br/>
-
-				</c:forEach>
+				<table border="1">
+					<c:forEach items="${books}" var="book">
+						<tr>
+	   						<td class="danger">${book.titulo}</td>
+						<tr>
+					</c:forEach>
+					
+				</table>
 			</div>
 		</div>
 	</div>
